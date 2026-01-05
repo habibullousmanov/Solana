@@ -391,3 +391,133 @@ footer {
   text-align: center;
   margin-left: 390px;
 }
+@media (max-width: 768px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .nav {
+    padding: 16px 20px;
+    justify-content: center;
+  }
+  .hero {
+    padding: 80px 20px;
+  }
+
+  .hero-content {
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+  }
+
+
+  .adoption {
+    padding: 80px 20px;
+  }
+
+  .adoption-top {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .left-text p {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .stats-vertical {
+    align-items: center;
+  }
+
+  .stat h2 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .adoption-bottom {
+    flex-direction: column;
+    margin-top: 80px;
+  }
+
+  .adoption-bottom h2 {
+    margin-top: 0;
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .feature {
+    max-width: 100%;
+    height: auto;
+    font-size: 18px;
+  }
+
+  .growth {
+    padding: 80px 20px;
+  }
+
+  .growth-header {
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+  }
+
+  .growth-header h2 {
+    font-size: 32px;
+  }
+
+  .tabs {
+    flex-wrap: wrap;
+  }
+
+  .growth-card {
+    grid-template-columns: 1fr;
+  }
+
+  .growth-content h3 {
+    font-size: 28px;
+  }
+
+  .growth-content p {
+    font-size: 16px;
+  }
+
+  .partners {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .community {
+    padding: 100px 20px;
+  }
+
+  .community-grid {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .community h2 {
+    font-size: 24px;
+  }
+}
