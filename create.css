@@ -1,0 +1,378 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, system-ui, sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at top, #1b0c2e, #07010d 70%);
+  color: #fff;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 80px;
+  align-items: center;
+}
+
+.nav a {
+  margin-left: 24px;
+  text-decoration: none;
+  color: #aaa;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 100px 80px;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 72px;
+  line-height: 1.05;
+}
+
+.hero p {
+  margin-top: 20px;
+  color: #bbb;
+  max-width: 420px;
+}
+
+.buttons {
+  margin-top: 32px;
+}
+
+.btn {
+  padding: 14px 28px;
+  border-radius: 999px;
+  border: none;
+  font-weight: 600;
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+.primary {
+  background: linear-gradient(90deg,#9945FF,#14F195);
+  color: black;
+}
+
+.ghost {
+  background: transparent;
+  border: 1px solid #444;
+  color: white;
+}
+
+.hero-image img {
+  width: 100%;
+  filter: drop-shadow(0 0 80px #7c3aed);
+}
+
+.cards {
+  padding: 80px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.card {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 20px;
+  padding: 24px;
+  backdrop-filter: blur(14px);
+  transition: transform .3s, box-shadow .3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 40px rgba(153,69,255,.3);
+}
+
+.card img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.footer {
+  padding: 40px;
+  text-align: center;
+  color: #777;
+}
+.dig-deeper {
+  padding: 100px 80px;
+}
+
+.dig-deeper h2 {
+  font-size: 36px;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  color: #9ca3af;
+  margin-bottom: 48px;
+}
+
+.deep-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.deep-card {
+  background: linear-gradient(180deg, #151018, #0c0911);
+  border: 1px solid rgba(255,255,255,.06);
+  border-radius: 18px;
+  padding: 24px;
+  transition: .3s;
+}
+
+.deep-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(153,69,255,.5);
+}
+
+.deep-card h3 {
+  margin: 12px 0;
+  font-size: 18px;
+}
+
+.deep-card p {
+  font-size: 14px;
+  color: #b3b3b3;
+  line-height: 1.6;
+}
+
+.deep-card a {
+  display: inline-block;
+  margin-top: 18px;
+  color: #9f7aea;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.tag {
+  font-size: 11px;
+  color: #a78bfa;
+  letter-spacing: .08em;
+}
+
+.glow {
+  position: relative;
+}
+
+.glow::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 18px;
+  background: radial-gradient(circle at bottom, rgba(168,85,247,.35), transparent 60%);
+  z-index: -1;
+}
+
+.source {
+  margin-top: 120px;
+  padding: 80px;
+  background: radial-gradient(circle at center, #1b1028, #07010d);
+  border-radius: 32px;
+}
+
+.source-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.source-card {
+  background: rgba(255,255,255,.04);
+  border-radius: 20px;
+  padding: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.source-card button {
+  background: transparent;
+  border: 1px solid #555;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 999px;
+}
+.changelog {
+  padding: 120px 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.changelog h2 {
+  font-size: 36px;
+}
+
+.changelog p {
+  color: #b3b3b3;
+  margin: 20px 0 32px;
+}
+
+.outline-btn {
+  background: transparent;
+  border: 1px solid #555;
+  padding: 12px 26px;
+  color: white;
+  border-radius: 999px;
+}
+
+.changelog-orb {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 30% 30%, #14f195, transparent 40%),
+    radial-gradient(circle at 70% 70%, #9945ff, transparent 40%),
+    #0b0712;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 0 80px rgba(153,69,255,.4);
+}
+
+.changelog-orb span {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.updates {
+  padding: 0 80px 120px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.update-card {
+  background: linear-gradient(180deg, #151018, #0b0811);
+  border: 1px solid rgba(255,255,255,.06);
+  border-radius: 20px;
+  padding: 32px;
+}
+
+.update-card p {
+  color: #b3b3b3;
+  margin: 14px 0 24px;
+}
+
+.email-box {
+  display: flex;
+  gap: 12px;
+}
+
+.email-box input {
+  flex: 1;
+  background: #0b0811;
+  border: 1px solid #333;
+  border-radius: 999px;
+  padding: 12px 18px;
+  color: white;
+}
+
+.green-btn {
+  background: #14f195;
+  color: black;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.pill-buttons button {
+  background: transparent;
+  border: 1px solid #555;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 999px;
+  margin-right: 10px;
+}
+
+.footer {
+  padding: 60px 80px;
+  border-top: 1px solid rgba(255,255,255,.06);
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-links {
+  display: flex;
+  gap: 80px;
+}
+
+.footer a {
+  display: block;
+  color: #aaa;
+  text-decoration: none;
+  margin-top: 10px;
+  font-size: 14px;
+}
+.card {
+  position: relative;
+  height: 360px;
+  width: 400px;
+  border-radius: 20px;
+  padding: 24px;
+  display: flex;
+  align-items: flex-end;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  margin-top: 40px;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,.75),
+    rgba(0,0,0,.2)
+  );
+}
+
+.card h3 {
+  position: relative;
+  z-index: 2;
+}
+
+/* har bir karta uchun rasm */
+.card-1 {
+  background-image: url("./assets/img/image.png");
+  background-size: 100%;
+}
+
+.card-2 {
+  background-image: url("./assets/img/image\ copy.png");
+}
+.card1{
+    display: flex;
+    gap: 20px;
+    padding: 30px;
+}
+.card-3 {
+  background-image: url("./assets/img/image\ copy\ 2.png");
+  background-size: 100%;
+}
+.card-4 {
+  background-image: url("./assets/img/image\ copy\ 3.png");
+  background-size: 100%;
+}
+.card-5 {
+  background-image: url("./assets/img/image\ copy\ 4.png");
+  background-size: 100%;
+}
+.card-6  {
+  background-image: url("./assets/img/image\ copy\ 5.png");
+  background-size: 100%;
+}
