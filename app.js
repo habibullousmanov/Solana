@@ -1,4 +1,4 @@
-const btn = document.querySelector(".btn.primary");
+const btn = document.querySelector(".btn primary");
 
 btn.addEventListener("click", () => {
  window.location.href = "create.html";
